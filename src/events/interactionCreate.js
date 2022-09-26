@@ -6,7 +6,7 @@ export default client => {
 
      client.ws.on("interactionCreate", interaction => {
 
-          if (!interaction.type === InteractionType.ApplicationCommand) return
+          if (interaction.type !== "ApplicationCommand") return
           // else if (interaction.type === InteractionType.ModalSubmit) modal_submit(interaction)
 
           const command = client.commands.get(interaction.commandName)
