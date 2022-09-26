@@ -1,11 +1,11 @@
 {
-  "name": "utility-bot",
+  "name": "hirohy",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
   "dependencies": {
-    "addox": "^1.1.2",
+    "addox": "^1.1.3",
     "dotenv": "^16.0.2"
   }
 }
