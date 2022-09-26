@@ -9,7 +9,7 @@ const client = new Client({
 })
 
 client.commands = new Collection()
-client.emoji = (emojiName) => client.guilds.cache.get(process.env.server).emojis.cache.find(e => e.name == emojiName) || "🎴"
+client.emoji = (emojiName) => clientcaches.guilds(process.env.server).guild.caches.emojis.find(e => e.name == emojiName) || "🎴"
 
 
 readdirSync("./events").forEach(async file => {
