@@ -1,14 +1,15 @@
-import register_commands from "../utils/register/register.js"
-
 export default client => {
 
      client.ws.on("ready", () => {
 
           console.log(`${client.user.tag} Aktif!`)
 
-          
+          const commands = client.commands.map(command => command.slash_data)
 
-          register_commands(client, "global")
+          client.caches.commands
+               .set(commands)
+               .then(() => console.log('Application commands (/) registered!'))
+               .catch(console.error);
 
      })
 
