@@ -7,3 +7,23 @@ const client = new Client({
           intents: ["DirectMessages", "GuildIntegrations", "GuildMembers", "GuildMessages", "GuildPresences", "Guilds", "MessageContent"]
      }
 })
+
+client.commands = new Collection()
+client.emoji = (emojiName) => client.guilds.cache.get(process.env.server).emojis.cache.find(e => e.name == emojiName) || "🎴"
+
+
+readdirSync("./events").forEach(async file => {
+     const event = await import(`./events/${file}`).then(m => m.default)
+     event(client)
+})
+
+readdirSync("./commands").forEach(category =>{
+
+     readdirSync(`./commands/${category}`).forEach(async file => {
+     const command = await import(`./commands/${category}/${file}`)
+     client.commands.set(command.data.name, command)
+     })
+
+})
+
+client.ws.connect(process.env.token)
