@@ -1,8 +1,8 @@
 export const data = {
-     name: "info-test",
+     name: "timeout-test",
      description: "test",
      execute(interaction) {
-          interaction.reply("test")
+          interaction.reply("test2")
      }
 }
 
