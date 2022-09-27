@@ -3,17 +3,18 @@ import { timeToMs } from "basic-ms"
 export const data = {
   name: "timeout-test",
   description: "test",
-  cooldown: 15,
   async execute(interaction) {
 
-    const member = interaction.options.pickUser("üye")
+    const user = interaction.options.pickUser("üye")
     const reason = interaction.options.pickString("sebep") || "Sebep belirtilmedi"
     const zaman = interaction.options.pickString("zaman")
+
+    const member = interaction.guild.caches.members.cache.get(user.id);
 
     await member
       .edit(
         {
-          communication_disabled_until: zaman,
+          communication_disabled_until: timeToMs(zaman),
         },
         reason,
       )
@@ -21,7 +22,7 @@ export const data = {
         throw err;
       });
 
-    interaction.reply({ content: `<@${member.user.id}> was timeouted.` });
+    interaction.reply({ content: `mute atıldı` });
   }
 }
 
