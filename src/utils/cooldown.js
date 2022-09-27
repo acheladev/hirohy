@@ -1,4 +1,4 @@
-import { Collection } from "discord.js"
+import { Collection } from "addox"
 const cooldowns = new Collection()
 
 export default (command, user_id) => {
