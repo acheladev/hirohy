@@ -1,16 +1,15 @@
 {
   "name": "hirohy",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "license": "MIT",
   "dependencies": {
-    "addox": "^1.2.7",
+    "addox": "^1.2.9",
     "basic-ms": "^1.1.4",
     "dotenv": "^16.0.2"
   },
   "scripts": {
     "start": "node src/app.js"
-  },
-  "repository": "https://github.com/acheladev/hirohy"
+  }
 }

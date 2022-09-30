@@ -1,4 +1,5 @@
 node_modules
 src/.env
-.gitignore
 .git
+yarn.lock
+.gitignore

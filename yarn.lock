@@ -17,10 +17,10 @@
   resolved "https://registry.yarnpkg.com/@tokenizer/token/-/token-0.3.0.tgz#fe98a93fe789247e998c75e74e9c7c63217aa276"
   integrity sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==
 
-addox@^1.2.7:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/addox/-/addox-1.2.7.tgz#b21df960c437645f4d79f2fac446187361fe27fa"
-  integrity sha512-0kGki8mEVgFBvtf8oIOJz6LtUR//YrSM+JXChewm0YRA8E3BnxnOGhYntzYJfZ2rKav696mKJunTrj/bguTU+w==
+addox@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/addox/-/addox-1.2.9.tgz#a24552b9a524e01174cc640d2cd5cd33e36f7cb8"
+  integrity sha512-N28cRrDx89PBv964CMeTLOgJFysMM0flL+CQ01E0OyAMFIHIZiYaN7lPM1V7Dc1FTIWVqGR8Of6pUCMpaKsB9g==
   dependencies:
     "@sapphire/async-queue" "^1.3.1"
     "@sapphire/snowflake" "^3.2.2"
@@ -59,9 +59,9 @@ discord-api-types@^0.37.10:
   integrity sha512-cUNXrCdD4hEj5iJ9SligTNur64rNnLX5s6CbvmatRpWKMZtrLTOlyLhuXmVbjfDXeXH7os8Qb71Wa7IEhC27Sw==
 
 dotenv@^16.0.2:
-  version "16.0.2"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.2.tgz#0b0f8652c016a3858ef795024508cddc4bffc5bf"
-  integrity sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA==
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 file-type@16.5.4:
   version "16.5.4"
